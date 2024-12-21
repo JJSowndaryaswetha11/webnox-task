@@ -1,0 +1,109 @@
+.service-container{
+    margin-top: 150px;
+    background-color: skyblue;
+    height: 80vh;
+    position: relative;
+    background: url('../../public/Images/background-3.jpg');
+    background-size: cover;
+}
+.service-heading{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: absolute;
+   top: 50px;
+   left: 350px;
+   
+}
+.service-cards{
+    position: absolute;
+    top: 170px;
+    display: flex;
+    column-gap:30px;
+    width:80%;
+    margin-left: 140px;
+}
+.service-card1{
+    width: 370px;
+    padding: 10px;
+    height: 40vh;
+    background-color:white;
+}
+.service-card2{
+    width: 370px;
+    padding: 10px;
+    height: 40vh;
+    background-color: white;
+}
+.service-card3{
+    width: 370px;
+    padding: 10px;
+    height: 40vh;
+    background-color: white;
+}
+.service-card-heading1{
+    margin-top: 10px;
+}
+.service-heading-para{
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.service-heading-para1{
+    color: white;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .service-container {
+        height: auto; /* Adjust the height to fit the stacked cards */
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        top: auto; /* Adjust top to fit below heading */
+        position: static;
+    }
+
+    .service-card1, .service-card2, .service-card3 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .service-heading {
+        position: static;
+        margin-bottom: 20px;
+        text-align: center;
+        left: 0;
+    }
+}
+
+/* For very small screens (less than 576px) */
+@media (max-width: 576px) {
+    .service-container {
+        height: auto; /* Adjust the height to fit the stacked cards */
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        top: auto; /* Adjust top to fit below heading */
+        position: static;
+    }
+
+    .service-card1, .service-card2, .service-card3 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .service-heading {
+        position: static;
+        margin-bottom: 20px;
+        text-align: center;
+        left: 0;
+    }
+}

@@ -1,0 +1,109 @@
+.records-container{
+    background: url('../../public/Images/background-4.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 70vh;
+    position: relative;
+    margin-top: 50px;
+}
+.record-section1{
+    position: absolute;
+    top: 100px;
+    left: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+.record-section1 img{
+    margin-left: 50px;
+    background-color: transparent;
+}
+.record-section1 p{
+    margin-bottom: 0;
+   margin-left: 10px;
+}
+.record-section1 h5{
+ margin-left: -15px;
+}
+.record-button{
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-align: center;
+    background-color:#74C0FC ;
+    color: white;
+
+}
+.record-button:hover{
+    background-color: #74c1fc8a;
+}
+.record-para,.record-heading{
+    color: #112A46;
+}
+.record-section2{
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    display: flex;
+    gap: 30px;
+    width: 75%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.record-icon1{
+    border-right: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 14vh;
+    padding-right: 15px;
+}
+.record-icon1:last-child {
+    border-right: none; 
+}
+.record-para1{
+    line-height: 0;
+    margin-top: 10px;
+}
+.record-para1 p{
+    color: grey;
+}
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .records-container {
+        background: transparent; 
+        height: auto;
+    }
+    
+    .record-section1 {
+        position: static; 
+        left: auto;
+    }
+    
+    .record-section2 {
+        position: static; 
+        left: auto; 
+        flex-direction: column; 
+        width: 100%; 
+        gap: 15px; 
+    }
+    
+    .record-icon1 {
+        border-right: none; 
+        border-bottom: 0; 
+        padding-right: 0; 
+        padding-bottom: 15px; 
+    }
+
+    .record-icon1:last-child {
+        border-bottom: none; 
+        padding-bottom: 0;
+    }
+}
